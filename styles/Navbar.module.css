@@ -1,0 +1,26 @@
+.navbar {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2.5rem;
+  z-index: 1;
+  width: 100%;
+}
+
+.navbarLink {
+  list-style-type: none;
+}
+.navbarLinkItem {
+  display: inline;
+  padding: 0 1.5em;
+  margin: 0 1.5em;
+  font-size: 1.5em;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.logo {
+  margin: 1em;
+  width: 8em;
+  height: 6em;
+}

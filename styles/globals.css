@@ -1,10 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Imbue:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Yusei+Magic&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Imbue", serif;
+  font-family: "Inconsolata", monospace;
+
+  background-image: linear-gradient(
+    to right,
+    #be9dfe,
+    #a5a8ff,
+    #8db1ff,
+    #78b9ff,
+    #69bfff,
+    #55b7fc,
+    #3db0f8,
+    #11a8f5,
+    #0091ec,
+    #0079e1,
+    #0060d3,
+    #0845c1
+  );
 }
 
 a {
