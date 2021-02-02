@@ -7,9 +7,6 @@ const Navbar = () => (
       <img src='/logo1.png' alt='logo' className={NavStyles.logo} />
       <ul className={NavStyles.navbarLink}>
         <li className={NavStyles.navbarLinkItem}>
-          <Link href='/'>Home</Link>
-        </li>
-        <li className={NavStyles.navbarLinkItem}>
           <Link href='/discover'>Discover</Link>
         </li>
         <li className={NavStyles.navbarLinkItem}>

@@ -1,16 +1,27 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar.js";
+import Trending from "../components/Trending.js";
 
-export default function Home() {
+export default function Home({ movies }) {
+  // console.log(movies);
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Film Cult</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />
-      <footer className={styles.footer}></footer>
+      <Trending movies={movies} />
     </div>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch(
+    `https://api.themoviedb.org/3/movie/popular?api_key=f670fe129b647c0b9d6f75b3bbcb8c33&language=en-US`
+  );
+  const movies = await res.json();
+  return {
+    props: { movies },
+  };
+};
