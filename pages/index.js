@@ -21,6 +21,7 @@ export const getStaticProps = async () => {
     `https://api.themoviedb.org/3/movie/popular?api_key=f670fe129b647c0b9d6f75b3bbcb8c33&language=en-US`
   );
   const movies = await res.json();
+
   return {
     props: { movies },
   };
